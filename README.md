@@ -2,8 +2,8 @@
 
 This repository contains the solutions to the two take-home assignments:
 
-1. [IK Solver](TODO)
-2. [Box Pose Estimation](TODO)
+1. [IK Solver](https://github.com/CesareTonola/jacobi_tasks/tree/main/ik_solver)
+2. [Box Pose Estimation](https://github.com/CesareTonola/jacobi_tasks/tree/main/box_pose_estimation)
 
 Each subproject includes a detailed explanation of the problem and how it was solved, along with relevant images and videos for visual validation.
 
@@ -22,7 +22,7 @@ Create a workspace (e.g. `~/jacobi_ws`), then clone this repository inside the `
 ```bash
 mkdir -p ~/jacobi_ws/src
 cd ~/jacobi_ws/src
-git clone TODO
+git clone https://github.com/CesareTonola/jacobi_tasks
 ```
 
 ### 2. Setup the Python Environment
@@ -56,7 +56,7 @@ cd ~/jacobi_ws/src/jacobi_tasks/ik_solver/ik_solver/scripts/ik_solver
 python3 compute_ik.py
 ```
 
-For full details, see the [IK Solver](TODO) section.
+For full details, see the [IK Solver](https://github.com/CesareTonola/jacobi_tasks/tree/main/ik_solver) section.
 
 ---
 
@@ -69,6 +69,6 @@ cd ~/jacobi_ws/src/jacobi_tasks/box_pose_estimation/scripts
 python3 box_pose_estimation.py
 ```
 
-For full details, see the [Box Pose Estimation](TODO) section.
+For full details, see the [Box Pose Estimation](https://github.com/CesareTonola/jacobi_tasks/tree/main/box_pose_estimation) section.
 
 
