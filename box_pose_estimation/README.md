@@ -92,4 +92,4 @@ This is the final reconstructed point cloud with the estimated OBB and the pose 
 
 A short video of the script execution is available here:
 
-https://drive.google.com/drive/folders/1IHfW-iNBbZrm5FU5sDUWyizdXBu-KNx5?usp=sharing
+https://drive.google.com/drive/u/1/folders/1IHfW-iNBbZrm5FU5sDUWyizdXBu-KNx5

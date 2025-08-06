@@ -137,4 +137,4 @@ Example:
 **Demo video**  
 A short video of the script execution is available here:
 
-https://drive.google.com/file/d/1xaiFWiuec8fmgdM8N9_YwydjuOV2z6pY/view?usp=sharing
+https://drive.google.com/drive/u/1/folders/1IHfW-iNBbZrm5FU5sDUWyizdXBu-KNx5

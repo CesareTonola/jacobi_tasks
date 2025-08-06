@@ -41,7 +41,7 @@ conda activate jacobi_task_env
 
 ### IK Solver
 
-This task requires building the C++ package first:
+This task requires building the C++ package first. Before, that, you need to install [Pinocchio](https://stack-of-tasks.github.io/pinocchio/download.html). Then:
 
 ```bash
 cd ~/jacobi_ws
@@ -49,7 +49,7 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 
-Then run the Python script:
+Run the Python script:
 
 ```bash
 cd ~/jacobi_ws/src/jacobi_tasks/ik_solver/ik_solver/scripts/ik_solver
