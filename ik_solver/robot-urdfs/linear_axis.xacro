@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="linear_axis" params="prefix:=linear_axis">
+
+    <link name="${prefix}_base_link">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="meshes/linear_axis/collision/base_link.obj"/>
+        </geometry>
+        <material>
+          <color rgba="0.7 0.7 0.7 1.0"/>
+        </material>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="meshes/linear_axis/visual/base_link.obj"/>
+        </geometry>
+      </visual>
+    </link>
+    <link name="${prefix}_link_1">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="meshes/linear_axis/collision/link_1.obj"/>
+        </geometry>
+        <material>
+          <color rgba="0.7 0.7 0.7 1.0"/>
+        </material>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="meshes/linear_axis/visual/link_1.obj"/>
+        </geometry>
+      </visual>
+    </link>
+    <!-- end of link list -->
+    <!-- joint list -->
+    <joint name="${prefix}_joint1" type="prismatic">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <axis xyz="1 0 0"/>
+      <parent link="${prefix}_base_link"/>
+      <child link="${prefix}_link_1"/>
+      <limit effort="1000" lower="-0.41" upper="7.3" velocity="1.0"/>
+    </joint>
+    <!-- end of joint list -->
+    <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
+    <link name="${prefix}_flange"/>
+    <joint name="${prefix}_joint1-flange" type="fixed">
+      <origin rpy="0 0 0" xyz="0.6 0.43 0.55"/>
+      <parent link="${prefix}_link_1"/>
+      <child link="${prefix}_flange"/>
+    </joint>
+
+  </xacro:macro>
+
+</robot>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="jacobi_robot">
+
+  <xacro:property name="abb_prefix" value="abb_irb6700"/>
+  <xacro:property name="axis_prefix" value="linear_axis"/>
+
+  <xacro:include filename="abb_irb6700_150_320.xacro"/>
+  <xacro:include filename="linear_axis.xacro"/>
+
+  <xacro:abb_irb6700 prefix="${abb_prefix}"/>
+  <xacro:linear_axis prefix="${axis_prefix}"/>
+
+  <joint name="joint_axis_to_abb" type="fixed">
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+    <parent link="${axis_prefix}_flange"/>
+    <child link="${abb_prefix}_base_link"/>
+  </joint>
+
+</robot>
